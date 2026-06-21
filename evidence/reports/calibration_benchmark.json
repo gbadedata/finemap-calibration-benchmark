@@ -1,0 +1,104 @@
+[
+  {
+    "label": "baseline_1causal",
+    "n_rep": 1000,
+    "params": {
+      "p": 600,
+      "n": 20000,
+      "n_causal": 1,
+      "pve": 0.002,
+      "block_w": 0.9
+    },
+    "nominal_coverage": 0.95,
+    "empirical_coverage": 1,
+    "calibration_gap": 0.05,
+    "mean_cs_size": 1,
+    "abstention_rate": 0.057,
+    "cs_fdr": 0.0032
+  },
+  {
+    "label": "strong_LD",
+    "n_rep": 1000,
+    "params": {
+      "p": 600,
+      "n": 20000,
+      "n_causal": 1,
+      "pve": 0.002,
+      "block_w": 0.97
+    },
+    "nominal_coverage": 0.95,
+    "empirical_coverage": 1,
+    "calibration_gap": 0.05,
+    "mean_cs_size": 1,
+    "abstention_rate": 0.051,
+    "cs_fdr": 0.0063
+  },
+  {
+    "label": "two_causal",
+    "n_rep": 1000,
+    "params": {
+      "p": 600,
+      "n": 20000,
+      "n_causal": 2,
+      "pve": 0.002,
+      "block_w": 0.9
+    },
+    "nominal_coverage": 0.95,
+    "empirical_coverage": 0.9983,
+    "calibration_gap": 0.0483,
+    "mean_cs_size": 1,
+    "abstention_rate": 0.411,
+    "cs_fdr": 0.0042
+  },
+  {
+    "label": "three_causal",
+    "n_rep": 1000,
+    "params": {
+      "p": 600,
+      "n": 20000,
+      "n_causal": 3,
+      "pve": 0.002,
+      "block_w": 0.9
+    },
+    "nominal_coverage": 0.95,
+    "empirical_coverage": 0.9972,
+    "calibration_gap": 0.0472,
+    "mean_cs_size": 1,
+    "abstention_rate": 0.646,
+    "cs_fdr": 0.0073
+  },
+  {
+    "label": "weak_effect",
+    "n_rep": 1000,
+    "params": {
+      "p": 600,
+      "n": 20000,
+      "n_causal": 1,
+      "pve": 0.001,
+      "block_w": 0.9
+    },
+    "nominal_coverage": 0.95,
+    "empirical_coverage": 0.9944,
+    "calibration_gap": 0.0444,
+    "mean_cs_size": 1,
+    "abstention_rate": 0.64,
+    "cs_fdr": 0.0083
+  },
+  {
+    "label": "very_weak_effect",
+    "n_rep": 1000,
+    "params": {
+      "p": 600,
+      "n": 20000,
+      "n_causal": 1,
+      "pve": 0.0007,
+      "block_w": 0.9
+    },
+    "nominal_coverage": 0.95,
+    "empirical_coverage": 0.9869,
+    "calibration_gap": 0.0369,
+    "mean_cs_size": 1,
+    "abstention_rate": 0.847,
+    "cs_fdr": 0.0195
+  }
+]
