@@ -1,0 +1,20 @@
+name: tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  calibration-logic:
+    # The calibration and recovery arithmetic is tested without susieR, so this job is fast
+    # and checks the measurement code independently of the fine-mapper.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "4.3"
+      - name: Calibration-logic tests
+        run: Rscript tests/test_calibration.R
