@@ -5,6 +5,7 @@
 [![R](https://img.shields.io/badge/R-4.3-blue.svg)](https://www.r-project.org/)
 [![susieR](https://img.shields.io/badge/susieR-0.14-green.svg)](https://github.com/stephenslab/susieR)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![tests](https://github.com/gbadedata/finemap-calibration-benchmark/actions/workflows/tests.yml/badge.svg)](https://github.com/gbadedata/finemap-calibration-benchmark/actions/workflows/tests.yml)
 
 Statistical fine-mapping takes a GWAS-associated locus and tries to pinpoint which variant is actually causal, separating it from the many non-causal variants dragged along by linkage disequilibrium. The leading method, SuSiE, reports its answer as a *credible set*: a small group of variants that, at a stated confidence level such as 95%, should contain the true causal variant.
 
